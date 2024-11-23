@@ -1,15 +1,12 @@
 import allure
 import pytest
-
-from data import PARAMS
 from locators.scooter_order_locators import TestOrderLocators
 from pages.base_page import BasePage
 
 
 class OrderPage(BasePage):
-    @pytest.mark.parametrize("first_name, last_name, address, metro_station, phone, delivery_date, rental_period",
-                             PARAMS)
-    @allure.id('Заполнение данных заказа')
+
+    @allure.step('Заполнение данных заказа')
     def set_order(self, first_name, last_name, address, metro_station, phone, delivery_date, rental_period):
         self.clear_element(TestOrderLocators.NAME)
         self.add_text_to_element(TestOrderLocators.NAME, first_name)
@@ -42,8 +39,10 @@ class OrderPage(BasePage):
         self.find_element_with_wait(TestOrderLocators.PLACE_ORDER_QUESTION)
         self.click_to_element(TestOrderLocators.BUTTON_YES)
 
-
-
+    @allure.step('Проверка заказа')
     def check_order(self, locator):
         return self.get_text_from_element(locator)
 
+    @allure.step("Проверка отображения сообщения о заказе")
+    def is_order_placed_displayed(self):
+        return self.find_element_with_wait(TestOrderLocators.PLACED_ORDER).is_displayed()

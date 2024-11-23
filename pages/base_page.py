@@ -44,3 +44,5 @@ class BasePage:
         element = self.find_element_with_wait(locator)
         element.clear()
 
+
+
