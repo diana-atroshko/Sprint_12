@@ -1,0 +1,747 @@
+{
+  "uid" : "9268080e36c3741a",
+  "name" : "test_order_scooter_top_button[order_data0]",
+  "fullName" : "tests.test_scooter_order.TestOrders#test_order_scooter_top_button",
+  "historyId" : "6835897d577ffa3281c8af474d5e3363",
+  "time" : {
+    "start" : 1732120341313,
+    "stop" : 1732120344869,
+    "duration" : 3556
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1732120332450,
+      "stop" : 1732120341313,
+      "duration" : 8863
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Скролл до искомого элемента",
+      "time" : {
+        "start" : 1732120341314,
+        "stop" : 1732120341329,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Поиск элемента с ожиданием",
+        "time" : {
+          "start" : 1732120341314,
+          "stop" : 1732120341326,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "['css selector', '.Button_Button__ra12g']"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "['css selector', '.Button_Button__ra12g']"
+      } ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Клик по элементу",
+      "time" : {
+        "start" : 1732120341330,
+        "stop" : 1732120341561,
+        "duration" : 231
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "['css selector', '.Button_Button__ra12g']"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Очистка поля",
+      "time" : {
+        "start" : 1732120341561,
+        "stop" : 1732120341578,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Поиск элемента с ожиданием",
+        "time" : {
+          "start" : 1732120341561,
+          "stop" : 1732120341574,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "['xpath', \"//input[@placeholder='* Имя']\"]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "['xpath', \"//input[@placeholder='* Имя']\"]"
+      } ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Отправка данных для заполнения поля",
+      "time" : {
+        "start" : 1732120341578,
+        "stop" : 1732120341652,
+        "duration" : 74
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Поиск элемента с ожиданием",
+        "time" : {
+          "start" : 1732120341578,
+          "stop" : 1732120341589,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "['xpath', \"//input[@placeholder='* Имя']\"]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "['xpath', \"//input[@placeholder='* Имя']\"]"
+      }, {
+        "name" : "text",
+        "value" : "'Иван'"
+      } ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Очистка поля",
+      "time" : {
+        "start" : 1732120341652,
+        "stop" : 1732120341668,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Поиск элемента с ожиданием",
+        "time" : {
+          "start" : 1732120341652,
+          "stop" : 1732120341665,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "['xpath', \"//input[@placeholder='* Фамилия']\"]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "['xpath', \"//input[@placeholder='* Фамилия']\"]"
+      } ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Отправка данных для заполнения поля",
+      "time" : {
+        "start" : 1732120341668,
+        "stop" : 1732120341699,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Поиск элемента с ожиданием",
+        "time" : {
+          "start" : 1732120341668,
+          "stop" : 1732120341682,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "['xpath', \"//input[@placeholder='* Фамилия']\"]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "['xpath', \"//input[@placeholder='* Фамилия']\"]"
+      }, {
+        "name" : "text",
+        "value" : "'Иванов'"
+      } ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Очистка поля",
+      "time" : {
+        "start" : 1732120341699,
+        "stop" : 1732120341716,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Поиск элемента с ожиданием",
+        "time" : {
+          "start" : 1732120341700,
+          "stop" : 1732120341714,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "['xpath', \"//input[@placeholder='* Адрес: куда привезти заказ']\"]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "['xpath', \"//input[@placeholder='* Адрес: куда привезти заказ']\"]"
+      } ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Отправка данных для заполнения поля",
+      "time" : {
+        "start" : 1732120341717,
+        "stop" : 1732120341761,
+        "duration" : 44
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Поиск элемента с ожиданием",
+        "time" : {
+          "start" : 1732120341717,
+          "stop" : 1732120341730,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "['xpath', \"//input[@placeholder='* Адрес: куда привезти заказ']\"]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "['xpath', \"//input[@placeholder='* Адрес: куда привезти заказ']\"]"
+      }, {
+        "name" : "text",
+        "value" : "'ул. Пушкина, д. 1'"
+      } ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Клик по элементу",
+      "time" : {
+        "start" : 1732120341761,
+        "stop" : 1732120342015,
+        "duration" : 254
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "['xpath', '//input[@placeholder=\"* Станция метро\"]']"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Заполнение локатора данными",
+      "time" : {
+        "start" : 1732120342015,
+        "stop" : 1732120342015,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator_1",
+        "value" : "['xpath', \".//*[contains(text(), '{}') and not(@class='some-hidden-class')]\"]"
+      }, {
+        "name" : "num",
+        "value" : "'Черкизовская'"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Клик по элементу",
+      "time" : {
+        "start" : 1732120342015,
+        "stop" : 1732120342761,
+        "duration" : 746
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "('xpath', \".//*[contains(text(), 'Черкизовская') and not(@class='some-hidden-class')]\")"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Очистка поля",
+      "time" : {
+        "start" : 1732120342761,
+        "stop" : 1732120342776,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Поиск элемента с ожиданием",
+        "time" : {
+          "start" : 1732120342761,
+          "stop" : 1732120342773,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "['xpath', \"//input[@placeholder='* Телефон: на него позвонит курьер']\"]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "['xpath', \"//input[@placeholder='* Телефон: на него позвонит курьер']\"]"
+      } ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Отправка данных для заполнения поля",
+      "time" : {
+        "start" : 1732120342776,
+        "stop" : 1732120342809,
+        "duration" : 33
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Поиск элемента с ожиданием",
+        "time" : {
+          "start" : 1732120342776,
+          "stop" : 1732120342787,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "['xpath', \"//input[@placeholder='* Телефон: на него позвонит курьер']\"]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "['xpath', \"//input[@placeholder='* Телефон: на него позвонит курьер']\"]"
+      }, {
+        "name" : "text",
+        "value" : "'+79012345678'"
+      } ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Клик по элементу",
+      "time" : {
+        "start" : 1732120342809,
+        "stop" : 1732120343039,
+        "duration" : 230
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "['xpath', \"//button[text()='Далее']\"]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Клик по элементу",
+      "time" : {
+        "start" : 1732120343040,
+        "stop" : 1732120343270,
+        "duration" : 230
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "['xpath', \"//div[contains(@class, 'Dropdown-control')]\"]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Заполнение локатора данными",
+      "time" : {
+        "start" : 1732120343271,
+        "stop" : 1732120343271,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator_1",
+        "value" : "['xpath', \"//div[contains(@class, 'Dropdown-option') and text()='{}']\"]"
+      }, {
+        "name" : "num",
+        "value" : "'сутки'"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Клик по элементу",
+      "time" : {
+        "start" : 1732120343271,
+        "stop" : 1732120344016,
+        "duration" : 745
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "('xpath', \"//div[contains(@class, 'Dropdown-option') and text()='сутки']\")"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Клик по элементу",
+      "time" : {
+        "start" : 1732120344016,
+        "stop" : 1732120344279,
+        "duration" : 263
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "['xpath', \"//input[@placeholder='* Когда привезти самокат']\"]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Очистка поля",
+      "time" : {
+        "start" : 1732120344279,
+        "stop" : 1732120344297,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Поиск элемента с ожиданием",
+        "time" : {
+          "start" : 1732120344279,
+          "stop" : 1732120344292,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "['xpath', \"//input[@placeholder='* Когда привезти самокат']\"]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "['xpath', \"//input[@placeholder='* Когда привезти самокат']\"]"
+      } ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Отправка данных для заполнения поля",
+      "time" : {
+        "start" : 1732120344297,
+        "stop" : 1732120344379,
+        "duration" : 82
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Поиск элемента с ожиданием",
+        "time" : {
+          "start" : 1732120344297,
+          "stop" : 1732120344308,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "['xpath', \"//input[@placeholder='* Когда привезти самокат']\"]"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "['xpath', \"//input[@placeholder='* Когда привезти самокат']\"]"
+      }, {
+        "name" : "text",
+        "value" : "'20.11.2024'"
+      } ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Клик по элементу",
+      "time" : {
+        "start" : 1732120344380,
+        "stop" : 1732120344604,
+        "duration" : 224
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "['xpath', \"(//button[contains(text(), 'Заказать')])[2]\"]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Поиск элемента с ожиданием",
+      "time" : {
+        "start" : 1732120344605,
+        "stop" : 1732120344618,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "['xpath', \"//div[contains(@class, 'Order_ModalHeader__3FDaJ') and contains(text(), 'Хотите оформить заказ?')]\"]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Клик по элементу",
+      "time" : {
+        "start" : 1732120344618,
+        "stop" : 1732120344850,
+        "duration" : 232
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "['xpath', \"//button[contains(@class, 'Button_Button__ra12g') and text()='Да']\"]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Поиск элемента с ожиданием",
+      "time" : {
+        "start" : 1732120344851,
+        "stop" : 1732120344863,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "locator",
+        "value" : "['xpath', \"//div[contains(@class, 'Order_ModalHeader__3FDaJ') and contains(text(), 'Заказ оформлен')]\"]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 35,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "setup::0",
+    "time" : {
+      "start" : 1732120344870,
+      "stop" : 1732120347562,
+      "duration" : 2692
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_scooter_order"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestOrders"
+  }, {
+    "name" : "host",
+    "value" : "WIN-EKB0MMLGAJ0"
+  }, {
+    "name" : "thread",
+    "value" : "17976-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_scooter_order"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "order_data",
+    "value" : "('Иван', 'Иванов', 'ул. Пушкина, д. 1', 'Черкизовская', '+79012345678', '20.11.2024', 'сутки')"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9268080e36c3741a.json",
+  "parameterValues" : [ "('Иван', 'Иванов', 'ул. Пушкина, д. 1', 'Черкизовская', '+79012345678', '20.11.2024', 'сутки')" ]
+}

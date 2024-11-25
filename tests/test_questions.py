@@ -8,8 +8,8 @@ class TestMainPage:
 
     def test_questions_and_answers(self, driver, num, result):
         main_page = MainPage(driver)
-        driver.get(URL)
-        main_page.close_banner(driver)
+        main_page.open_url(URL)
+        main_page.close_banner()
         answer_text = main_page.get_answer_text(num)
         assert answer_text == result
 

@@ -39,9 +39,6 @@ class OrderPage(BasePage):
         self.find_element_with_wait(TestOrderLocators.PLACE_ORDER_QUESTION)
         self.click_to_element(TestOrderLocators.BUTTON_YES)
 
-    @allure.step('Проверка заказа')
-    def check_order(self, locator):
-        return self.get_text_from_element(locator)
 
     @allure.step("Проверка отображения сообщения о заказе")
     def is_order_placed_displayed(self):

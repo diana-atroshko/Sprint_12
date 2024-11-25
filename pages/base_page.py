@@ -3,8 +3,7 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from locators.questions_locators import TestLocators
-from selenium.webdriver.common.by import By
+
 
 
 class BasePage:
@@ -44,5 +43,24 @@ class BasePage:
         element = self.find_element_with_wait(locator)
         element.clear()
 
+    @allure.step("Ожидание элемента и проверка его отображения")
+    def is_element_displayed(self, locator):
+        element = self.find_element_with_wait(locator)
+        return element.is_displayed()
 
+    @allure.step("Переключение на окно по индексу")
+    def switch_to_window(self, index):
+        self.driver.switch_to.window(self.driver.window_handles[index])
+
+    @allure.step("Закрытие текущего окна")
+    def close_window(self):
+        self.driver.close()
+
+    @allure.step("Получение текущего URL")
+    def get_current_url(self):
+        return self.driver.current_url
+
+    @allure.step("Открытие URL")
+    def open_url(self, url):
+        self.driver.get(url)
 

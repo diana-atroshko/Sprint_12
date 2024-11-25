@@ -1,0 +1,83 @@
+{
+  "uid" : "669e81e6cf9ad39",
+  "name" : "test_logo_yandex",
+  "fullName" : "tests.test_logos.TestLogos#test_logo_yandex",
+  "historyId" : "2f600a9ed793234dde2ccfa6b65a5f1d",
+  "time" : {
+    "start" : 1732119431256,
+    "stop" : 1732119433625,
+    "duration" : 2369
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1732119421681,
+      "stop" : 1732119431255,
+      "duration" : 9574
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "setup::0",
+    "time" : {
+      "start" : 1732119433908,
+      "stop" : 1732119436746,
+      "duration" : 2838
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_logos"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogos"
+  }, {
+    "name" : "host",
+    "value" : "WIN-EKB0MMLGAJ0"
+  }, {
+    "name" : "thread",
+    "value" : "4064-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_logos"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "669e81e6cf9ad39.json",
+  "parameterValues" : [ ]
+}
