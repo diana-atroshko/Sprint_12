@@ -1,0 +1,175 @@
+{
+  "uid" : "57edf9efdf19a158",
+  "name" : "Заказ самоката через нижнюю кнопку",
+  "fullName" : "tests.test_scooter_order.TestOrders#test_order_scooter_bottom_button",
+  "historyId" : "74c34bc8aa1e29d4167828d2ad1b1424",
+  "time" : {
+    "start" : 1732370534293,
+    "stop" : 1732370534297,
+    "duration" : 4
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'find_element'",
+  "statusTrace" : "self = <tests.test_scooter_order.TestOrders object at 0x000002153A606E70>, setup = None\norder_data = ('Петр', 'Петров', 'пр. Ленина, д. 2', 'Сокольники', '+79087654321', '22.11.2024', ...)\ndriver = <selenium.webdriver.firefox.webdriver.WebDriver (session=\"f9da496c-1b34-4a06-8de6-657f5df1ad77\")>\n\n    @pytest.mark.parametrize(\"order_data\", [PARAMS[1]])\n    @allure.title(\"Заказ самоката через нижнюю кнопку\")\n    def test_order_scooter_bottom_button(self, setup, order_data, driver):\n        main_page = MainPage(setup)\n        order_page = OrderPage(main_page.driver)\n>       main_page.scroll_to_order_button(\"bottom\")\n\ntests\\test_scooter_order.py:35: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\npages\\main_page.py:56: in scroll_to_order_button\n    self.scroll_to_element(TestOrderLocators.BUTTON_ORDER_DOWN)\npages\\base_page.py:39: in scroll_to_element\n    element = self.find_element_with_wait(locator)\npages\\base_page.py:16: in find_element_with_wait\n    WebDriverWait(self.driver,10).until(EC.visibility_of_element_located(locator))\n.venv\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py:96: in until\n    value = method(self._driver)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ndriver = None\n\n    def _predicate(driver: WebDriverOrWebElement):\n        try:\n>           return _element_if_visible(driver.find_element(*locator))\nE           AttributeError: 'NoneType' object has no attribute 'find_element'\n\n.venv\\Lib\\site-packages\\selenium\\webdriver\\support\\expected_conditions.py:156: AttributeError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1732370529370,
+      "stop" : 1732370534292,
+      "duration" : 4922
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1732370521600,
+      "stop" : 1732370529370,
+      "duration" : 7770
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'find_element'",
+    "statusTrace" : "self = <tests.test_scooter_order.TestOrders object at 0x000002153A606E70>, setup = None\norder_data = ('Петр', 'Петров', 'пр. Ленина, д. 2', 'Сокольники', '+79087654321', '22.11.2024', ...)\ndriver = <selenium.webdriver.firefox.webdriver.WebDriver (session=\"f9da496c-1b34-4a06-8de6-657f5df1ad77\")>\n\n    @pytest.mark.parametrize(\"order_data\", [PARAMS[1]])\n    @allure.title(\"Заказ самоката через нижнюю кнопку\")\n    def test_order_scooter_bottom_button(self, setup, order_data, driver):\n        main_page = MainPage(setup)\n        order_page = OrderPage(main_page.driver)\n>       main_page.scroll_to_order_button(\"bottom\")\n\ntests\\test_scooter_order.py:35: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\npages\\main_page.py:56: in scroll_to_order_button\n    self.scroll_to_element(TestOrderLocators.BUTTON_ORDER_DOWN)\npages\\base_page.py:39: in scroll_to_element\n    element = self.find_element_with_wait(locator)\npages\\base_page.py:16: in find_element_with_wait\n    WebDriverWait(self.driver,10).until(EC.visibility_of_element_located(locator))\n.venv\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py:96: in until\n    value = method(self._driver)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ndriver = None\n\n    def _predicate(driver: WebDriverOrWebElement):\n        try:\n>           return _element_if_visible(driver.find_element(*locator))\nE           AttributeError: 'NoneType' object has no attribute 'find_element'\n\n.venv\\Lib\\site-packages\\selenium\\webdriver\\support\\expected_conditions.py:156: AttributeError",
+    "steps" : [ {
+      "name" : "Прокрутка до кнопки заказа",
+      "time" : {
+        "start" : 1732370534293,
+        "stop" : 1732370534296,
+        "duration" : 3
+      },
+      "status" : "broken",
+      "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'find_element'\n",
+      "statusTrace" : "  File \"C:\\Users\\user\\PycharmProjects\\Sprint_12\\.venv\\Lib\\site-packages\\allure_commons\\_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"C:\\Users\\user\\PycharmProjects\\Sprint_12\\pages\\main_page.py\", line 56, in scroll_to_order_button\n    self.scroll_to_element(TestOrderLocators.BUTTON_ORDER_DOWN)\n  File \"C:\\Users\\user\\PycharmProjects\\Sprint_12\\.venv\\Lib\\site-packages\\allure_commons\\_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"C:\\Users\\user\\PycharmProjects\\Sprint_12\\pages\\base_page.py\", line 39, in scroll_to_element\n    element = self.find_element_with_wait(locator)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\user\\PycharmProjects\\Sprint_12\\.venv\\Lib\\site-packages\\allure_commons\\_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"C:\\Users\\user\\PycharmProjects\\Sprint_12\\pages\\base_page.py\", line 16, in find_element_with_wait\n    WebDriverWait(self.driver,10).until(EC.visibility_of_element_located(locator))\n  File \"C:\\Users\\user\\PycharmProjects\\Sprint_12\\.venv\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 96, in until\n    value = method(self._driver)\n            ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\user\\PycharmProjects\\Sprint_12\\.venv\\Lib\\site-packages\\selenium\\webdriver\\support\\expected_conditions.py\", line 156, in _predicate\n    return _element_if_visible(driver.find_element(*locator))\n                               ^^^^^^^^^^^^^^^^^^^\n",
+      "steps" : [ {
+        "name" : "Скролл до искомого элемента",
+        "time" : {
+          "start" : 1732370534293,
+          "stop" : 1732370534294,
+          "duration" : 1
+        },
+        "status" : "broken",
+        "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'find_element'\n",
+        "statusTrace" : "  File \"C:\\Users\\user\\PycharmProjects\\Sprint_12\\.venv\\Lib\\site-packages\\allure_commons\\_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"C:\\Users\\user\\PycharmProjects\\Sprint_12\\pages\\base_page.py\", line 39, in scroll_to_element\n    element = self.find_element_with_wait(locator)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\user\\PycharmProjects\\Sprint_12\\.venv\\Lib\\site-packages\\allure_commons\\_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"C:\\Users\\user\\PycharmProjects\\Sprint_12\\pages\\base_page.py\", line 16, in find_element_with_wait\n    WebDriverWait(self.driver,10).until(EC.visibility_of_element_located(locator))\n  File \"C:\\Users\\user\\PycharmProjects\\Sprint_12\\.venv\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 96, in until\n    value = method(self._driver)\n            ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\user\\PycharmProjects\\Sprint_12\\.venv\\Lib\\site-packages\\selenium\\webdriver\\support\\expected_conditions.py\", line 156, in _predicate\n    return _element_if_visible(driver.find_element(*locator))\n                               ^^^^^^^^^^^^^^^^^^^\n",
+        "steps" : [ {
+          "name" : "Поиск элемента с ожиданием",
+          "time" : {
+            "start" : 1732370534293,
+            "stop" : 1732370534293,
+            "duration" : 0
+          },
+          "status" : "broken",
+          "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'find_element'\n",
+          "statusTrace" : "  File \"C:\\Users\\user\\PycharmProjects\\Sprint_12\\.venv\\Lib\\site-packages\\allure_commons\\_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"C:\\Users\\user\\PycharmProjects\\Sprint_12\\pages\\base_page.py\", line 16, in find_element_with_wait\n    WebDriverWait(self.driver,10).until(EC.visibility_of_element_located(locator))\n  File \"C:\\Users\\user\\PycharmProjects\\Sprint_12\\.venv\\Lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 96, in until\n    value = method(self._driver)\n            ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\user\\PycharmProjects\\Sprint_12\\.venv\\Lib\\site-packages\\selenium\\webdriver\\support\\expected_conditions.py\", line 156, in _predicate\n    return _element_if_visible(driver.find_element(*locator))\n                               ^^^^^^^^^^^^^^^^^^^\n",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "['css selector', 'button.Button_Button__ra12g.Button_Middle__1CSJM']"
+          } ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "['css selector', 'button.Button_Button__ra12g.Button_Middle__1CSJM']"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "button_position",
+        "value" : "'bottom'"
+      } ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1732370546588,
+      "stop" : 1732370549692,
+      "duration" : 3104
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_scooter_order"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestOrders"
+  }, {
+    "name" : "host",
+    "value" : "WIN-EKB0MMLGAJ0"
+  }, {
+    "name" : "thread",
+    "value" : "22584-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_scooter_order"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "order_data",
+    "value" : "('Петр', 'Петров', 'пр. Ленина, д. 2', 'Сокольники', '+79087654321', '22.11.2024', 'двое суток')"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "57edf9efdf19a158.json",
+  "parameterValues" : [ "('Петр', 'Петров', 'пр. Ленина, д. 2', 'Сокольники', '+79087654321', '22.11.2024', 'двое суток')" ]
+}
